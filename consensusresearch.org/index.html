@@ -1,0 +1,474 @@
+        <!DOCTYPE html> 
+                <html lang="en"> 
+                    <head> 
+                        <meta http-equiv="content-type" content="text/html; charset=UTF-8">  
+                        <meta charset="utf-8"> 
+                        <title>Consensus Research</title> 
+                         
+                        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"> 
+                         
+                        <link rel="shortcut icon" href="/bootstrap/img/favicon.ico"> 
+                        <link rel="apple-touch-icon" href="/bootstrap/img/apple-touch-icon.png"> 
+                        <link rel="apple-touch-icon" sizes="72x72" href="/bootstrap/img/apple-touch-icon-72x72.png"> 
+                        <link rel="apple-touch-icon" sizes="114x114" href="/bootstrap/img/apple-touch-icon-114x114.png"> 
+                       
+                        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" /> 
+                        <meta http-equiv="Pragma" content="no-cache" /> 
+                        <meta http-equiv="Expires" content="0" /> 
+                         
+                        <style id="bsCss">
+/*
+A Bootstrap 3.1 affix sidebar template
+from http://bootply.com
+
+This CSS code should follow the 'bootstrap.css'
+in your HTML file.
+
+license: MIT
+author: bootply.com
+*/
+
+body {
+ background-color:#d0d0df;
+ padding-top:50px;
+}
+
+#masthead {
+ min-height:250px;
+}
+
+.panel {
+ background-color:#f0f0ff;
+}
+
+.col-md-9 {
+ background-color:#dfdfff;
+}
+
+
+#masthead h1 {
+ font-size: 30px;
+ line-height: 1;
+ padding-top:20px;
+}
+
+#masthead .well {
+ margin-top:8%;
+}
+
+@media screen and (min-width: 768px) {
+  #masthead h1 {
+    font-size: 50px;
+  }
+}
+
+.navbar-bright {
+ background-color:#111155;
+ color:#fff;
+}
+
+.affix-top,.affix{
+ position: static;
+}
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+  	margin-top:30px;
+  	width:228px;
+  }
+  
+  #sidebar.affix {
+    position: fixed;
+    top:70px;
+    width:228px;
+  }
+}
+
+#sidebar li.active {
+  border:0 #eee solid;
+  border-right-width:5px;
+}
+        			  
+                        </style> 
+                         
+                        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+                        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+                         
+                        <script id="bsJs"> 
+                        $(document).ready(function() { 
+                        	/* activate sidebar */
+$('#sidebar').affix({
+  offset: {
+    top: 235
+  }
+});
+
+/* activate scrollspy menu */
+var $body   = $(document.body);
+var navHeight = $('.navbar').outerHeight(true) + 10;
+
+$body.scrollspy({
+	target: '#leftCol',
+	offset: navHeight
+});
+
+/* smooth scrolling sections */
+$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top - 50
+        }, 1000);
+        return false;
+      }
+    }
+});
+                        }); 
+                        </script>
+			<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42193850-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+                    </head> 
+                    <body> 
+<!--                    	<nav class="navbar navbar-default navbar-fixed-top" role="banner">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span>
+ <span class="icon-bar"></span>
+
+                <span
+                class="icon-bar"></span> <span class="icon-bar"></span>
+
+            </button> <a href="/" class="navbar-brand">Consensus Research</a>
+
+        </div>
+         <nav class="collapse navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                <li> <a class="" href="#sec">Get Started</a>
+
+                </li>
+                <li> <a class="" href="#sec">Edit</a>
+
+                </li>
+                <li> <a class="" href="#sec" contenteditable="false">Visualize</a>
+
+                </li>
+                <li> <a style="" id="" class="" href="#sec" contenteditable="false">Prototype</a>
+
+                </li>
+            </ul>
+        </nav> 
+    </div> 
+</nav> -->
+<div class="" id="masthead">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                 <h1 style="" class="">Consensus Research 
+            <p class="lead" contenteditable="false">Proving the Future...</p>
+          </h1>
+
+            </div>
+            <!--<div class="col-md-5">
+                <div class="well well-lg">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="//placehold.it/180x100" class="img-responsive">
+                        </div>
+                        <div class="col-sm-6" contenteditable="false">Some text here</div>
+                    </div>
+                </div>
+            </div>
+          -->
+        </div>
+    </div>
+    <!--/container-->
+</div>
+<!--/masthead-->
+<!--main-->
+<div class="container">
+ <script type='text/javascript'>
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-42193850-2']);
+_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script> 
+  <div class="row">
+      <!--left-->
+      <div class="col-md-3" id="leftCol">
+        <ul class="nav nav-stacked" id="sidebar">	      
+          <li><a class="" href="#about"><h4>About</h4></a>
+          </li>
+          <li><a class="" href="#problem"><h4>The Problem & Solution</h4></a>
+          </li>
+          <li><a class="" href="#research"><h4>Research</h4></a>
+          </li>
+	  <li><a class="" href="#scorex"><h4>The SCOREX platform</h4></a>
+          </li>
+          <li><a class="" href="#downloads"><h4>Links and Downloads</h4></a>
+          </li>
+	  <li><a class="" href="#funding"><h4>Funding</h4></a>
+          </li>
+          <li><a class="" href="#contact"><h4>Contact us</h4></a>
+          </li>		
+        </ul>
+      </div>
+        <!--/left-->
+        <!--right-->
+        <div class="col-md-9">
+          <h2 class="" id="about">About</h2>             
+          <p class="text-justify"> Consensus Research is the first independent research group going to bring
+	    formal verification to the world of crypto-currencies!</p>
+          <hr class="">
+          <p class="text-justify">The main commercial profit from our activity is increased trust in Nxt and/or
+	       other crypto-currencies willing to work with us and crypto-currency industry at whole. Also we'll consult
+	       core developers to make more effective products. So coin teams and whales are biggest beneficiaries,
+	       and our best supporters, we hope so. We'll not pay dividends at the moment, so the <a href="#funding"> asset </a>
+	       issuance is the kind of crowdfunding. </p>
+             <h2 class="" id="problem">The Problem & Solution</h2>
+
+             <p class="text-justify">While <a href="https://en.wikipedia.org/wiki/Formal_verification">formal approach</a> is being
+	       widely using in hardware industry and some critical software (medical, aerospace, compilers, financing etc.),
+	       crypto-currencies suffer from unproven claims, bold statements, low-quality "papers" and naive implementations,
+	       though a cost of an error could be very high (USD$ millions). Consensus Research group is going to improve overall
+	       quality of thinking about cryptocurrencies with:</p>
+            <ul>
+            <li>proven open-source reference implementations code made partly at least in <a href="https://en.wikipedia.org/wiki/Coq">Coq
+                programming language / theorem prover </a> and one of the functional language (Haskell, Scala);</li>
+            <li>executable simulations anyone can play with (to e.g. find best parameters for a system or compare algorithms);</li>
+            <li>formal but understandable papers;</li>
+            <li>coins developers consultations.</li>
+            </ul>
+            
+            <h2 class="" id="research">Research</h2>
+	     <p class="text-justify">In October'14 we had published two blogposts about Nxt forging algo,
+	       "Inside a Proof-of-Stake Cryptocurrency"
+               <a href="http://chepurnoy.org/blog/2014/10/inside-a-proof-of-stake-cryptocurrency-part-1/">part1</a> &amp;
+               <a href="http://chepurnoy.org/blog/2014/10/inside-a-proof-of-stake-cryptocurrency-part-2/">part2</a>.
+	       Later it has been published <a href="#papers">papers</a> and <a href="#articles">articles</a> on some
+	       statistical properties of Nxt forging and PoS crypto-currencies as a whole and possible ways of implementation.
+	       The community discussion can be found at
+	       <a href="https://nxtforum.org/general/nxt-forging-algorithm-simulating-approach/">
+		 pretty famous topic </a> and the project dedicated <a href="https://nxtforum.org/consensus-research/">sub-forum </a>.
+	       It has been made an impressive amount of work converting the model described in Java -> Haskell into Coq, proving
+	       some basic properties as theorems, and introducing multibranching forging
+	       for that (which could be turned into so-called Transparent Forging during implementation).</p>
+               <hr> 
+               <h4 id="milestones">R&D Milestones</h4>
+               <ol>
+		 <li>Executable simulation tool for Nxt-like 100% Proof-of-Stake forging (with delays &amp; transactions).
+		   Executable multibranching forging simulation tool (to estimate properties &amp; computational requirements of
+		   the Transparent Forging). Some proofs around the code. </li>
+		 <li>Research on Consensus properties of the multibranch forging. In particular, Nothing-At-Stake problem
+		   formally defined and analyzed after this milestone.</li>
+		 <li>Formally proven and secure proof-of-stake forging model (with reference implementation in Haskell w. Coq) </li>
+		 <li>Analisys of the confirmation number correspondent to the multi-branching forging model and offering reference
+		   code. </li> 
+               </ol>
+	       <p class="text-justify">
+		   Well, further milestones will be clear after. Finally, we're looking for the crypto-currencies networks
+		   algorithms where consensus itself would be much more profitable than forging (or mining) and we believe that
+		   our approach could demonstrate the benefits in a rational formal way. However the list of articles and papers
+	           grows and demonstrates our vision and research directions. </p>
+	       </ol>
+	       <hr>
+	    <h4 id="papers">Papers</h4>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="">Nxt forging algorithm: simulating approach</h3>
+                        </div>
+                        <div class="panel-body">In this paper we investigate properties of the forging algorithm used in
+			  PoS crypto-currencies networks such as Nxt. The approach we are using is statistical modeling and
+			  simulation. We analyzed the currently implemented algorithm and found some weaknesses of it. We have
+			  found that time for block generation depends on balance distribution over network accounts and even in
+			  the simplest case with one node it cannot converge to speciﬁed value of 1 minute per block. We also
+			  present some newer regulation techniques which help to avoid those issues and allow adapt nodes to
+			  generate a block in the speciﬁed average time interval independent on balance distribution for static
+			  and dynamic cases.			  
+			  <a href="https://scribd.com/doc/243341106/Nxt-forging-algorithm-simulating-approach"> Read more... </a>
+			</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="">Multibranch forging</h3>
+                        </div>
+                        <div class="panel-body">In this paper we present the concept of provable code usage for
+			  formally described and reliable crypto-currencies systems development. Capabilities of this
+			  approach are presented on a model of multibranch forging algorithm in the Proof-of-Stake networks.
+			  The results of simulation show the potential power of multibranch forging as well as a potential
+			  tendency towards the Proof-of-Work networks which should be avoided. The latter opens new areas
+			  of research. Our concept of the multibranch forging can be interpreted as a formally stated reference
+			  implementation for the broadly discussed Transparent Forging model. Examples of functional code
+			  are also presented to demonstrate our approach and its properties.
+			  <a href="https://scribd.com/doc/248208963/Multibranch-forging"> Read more... </a>
+			</div>
+                    </div>
+                </div>
+		<div class="col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="">PoS forging algorithms: multi-strategy forging and related security issues</h3>
+                        </div>
+                        <div class="panel-body"> Different properties of the multibranch forging algorithm in the Proof-of-Stake
+			  cryptocurrencies are investigated. A comparison with a single-branch forging strategy is presented
+			  (treating a multibranch ability as an attack) along with the inner multibranch attacks like
+			  Nothing-At-Stake problem. The latter is formally defined and an algorithm to model it is given.
+			  Most of the results of the study reveal advantages of the multibranch approach over the classical one. 
+			  <a href="https://scribd.com/doc/256072839/PoS-forging-algorithms-multi-strategy-forging-and-related-security-issues"> Read more... </a>
+			</div>
+                    </div>
+                </div>
+		<div class="col-md-3">
+                  <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="">Multibranch forging algorithms: tails switching effect and chain measures</h3>
+                        </div>
+                        <div class="panel-body"> In this paper we provide approach and simulation results for different
+			  measures applied to the block chains and their effect on the tails switching effect. Several measures
+			  types are investigating in terms of their influence on the distribution of the tails switching length.
+			  We also present the positive effect of the network classicalization by additional single-branch nodes.
+			  Also some valuable physical analogues are specified.
+			  <a href="https://scribd.com/doc/256073121/Multibranch-forging-algorithms-tails-switching-effect-and-chain-measures"> Read more... </a>
+			</div>
+                    </div>
+                </div>
+            </div>
+            <hr class="">
+	    <h4 id="articles">Articles</h4>
+	    <ol>
+	      <li> <a href="http://chepurnoy.org/blog/2014/10/inside-a-proof-of-stake-cryptocurrency-part-1/"> Inside a Proof-of-Stake Cryptocurrency Part 1: Basic Structures </a> </li>
+	      <li> <a href="http://chepurnoy.org/blog/2014/10/inside-a-proof-of-stake-cryptocurrency-part-2/"> Inside a Proof-of-Stake Cryptocurrency Part 2: Forging Algorithm </a></li>
+	      <li> <a href="http://chepurnoy.org/blog/2014/11/inside-a-proof-of-stake-cryptocurrency-part-3/"> Inside a Proof-of-Stake Cryptocurrency Part 3: A Local Ledger </a></li>
+	      <li> <a href="http://chepurnoy.org/blog/2014/12/inside-a-proof-of-stake-cryptocurrency-part-4/"> Inside a Proof-of-Stake Cryptocurrency Part 4: The Executable Forging Simulation </a></li>
+	      <li> <a href="http://chepurnoy.org/blog/2014/12/forging-simulation-tool/"> Forging Simulation Tool for a Proof-of-Stake Cryptocurrency </a></li>
+	      <li> <a href="http://chepurnoy.org/blog/2015/04/cap-theorem-and-the-blockchain-as-the-database/"> CAP Theorem and the Blockchain as the Database </a></li>
+	      <li> <a href="http://chepurnoy.org/blog/2015/05/scorex-ultracompact-cryptocurrency-engine-for-hackers/"> Scorex - Ultracompact Cryptocurrency Engine for Hackers </a></li>
+	      <li> <a href="http://chepurnoy.org/blog/2015/08/a-cryptocurrency-architecture/"> A Cryptocurrency Architecture </a></li>
+
+	    </ol>
+     
+	    <!--          
+			  <div class="row">
+			    <div class="col-md-4">
+			      <img src="//placehold.it/300x300" class="img-responsive">
+			    </div>
+			    <div class="col-md-4">
+			      <img src="//placehold.it/300x300" class="img-responsive">
+			    </div>
+			    <div class="col-md-4">
+			      <img src="//placehold.it/300x300" class="img-responsive">
+			    </div>
+			  </div>
+			  <hr class=""> -->
+	    
+	    <h2 class="" id="scorex">The SCOREX platform</h2>
+            <p class="text-justify">
+             The SCOREX platform offers its users the opportunity to play with the basic crypto-currency features in the box.
+             One can test new consensus algorithm or check completeness of the transaction model with it. The SCOREX has quite
+	     powerful and at the same time compact code and could be useful both by novices and experts. </p>
+            <hr>
+            <p> <h4> Features </h4> </p>
+             <ol>
+               <li> Compact, functional, actors-powered code; </li>
+	       <li> Two 100% Proof-of-Stake consensus algos out of the box, Nxt-like and Qora-like. One algo
+		 could be replaced with an another with just one line of code edited; </li>
+	       <li> Simplest transactions model; </li>
+               <li> Asynchronous network layer on the top of TCP/IP; </li>
+	       <li> JSON API; </li>
+	       <li> Command line client for the JSON API; </li>
+	       <li> Curve25519 for signatures. </li>
+	     </ol>
+	     Please find more information on the SCOREX platform at the
+	     <a href="https://github.com/ConsensusResearch/Scorex-Lagonaki"> github repository</a>.
+	     </p>
+	    
+             <h2 class="" id="downloads">Links and Downloads</h2>
+             <p class="text-justify">
+             Our downloadable results are collected at the
+             <a href="https://github.com/ConsensusResearch/"> github repository</a>:
+             <ol>
+	       <li> <a href="https://github.com/ConsensusResearch/articles-papers"> Articles and papers.</a></li>
+               <li> <a href="https://github.com/ConsensusResearch/ForgingSimulation"> Simulation
+		   tool for Nxt-like 100% Proof-of-Stake forging.</a></li>
+               <li> <a href="https://github.com/ConsensusResearch/MultiBranch"> Multibranch forging simulation
+		   for PoS crypto-currencies networks.</a></li>
+	       <li> <a href="https://github.com/ConsensusResearch/flp">Formalization of the FLP Impossibility Theorem with Coq interactive theorem prover.</a></li>
+	        <li> <a href="https://github.com/ConsensusResearch/Scorex-Lagonaki">150+ starred Lagonaki realease of the SCOREX platform.</a></li>
+	       
+	     </ol>
+	     </p>	     
+             <p class="text-justify">
+	       Please use the correspondent description at the links above for more details.
+	       We also welcome everybody to contribute to our research and software development.
+             </p>
+	     <h2 class="" id="funding">Funding</h2>
+
+              <p class="text-justify">We think that community would respect our goals and approach and therefore
+	       we offer our Nxt AE assets as a compromise between donations and investments. The asset mechanism lets to
+	       benefit both the developers and coins investors through the transparent model of research and core
+	       development. We've issued 10,000,000 assets with initial price of 1 Nxt each. Assets will be sold in
+	       lots corresponding to milestones. The name of the asset is "consensus" (Asset Id:  5841059555983208287).
+	       Please visit this
+	       <a href="https://trade.secureae.com/#5841059555983208287"> Secure AE page</a> to support us.</p>
+	     <hr>
+	    <h4 class="" id="curfunding">Current state</h4> 
+            <p class="text-justify">
+              We divide the funding process into several stages to restrict ourselves and give the investors
+	      the transparent picture. Here we summarize the current state of the funding process through
+	      the issued <a href="https://trade.secureae.com/#5841059555983208287"> "consensus" </a> Nxt asset: 
+            </p>
+	    <ol>
+	      <li> 300,000 Nxt - 100% completed.</li>
+	      <li> 400,000 Nxt - 75% completed.</li>	      
+	    </ol>  
+             <hr>
+	     <p> <h4> Digital Board of Asset Holders </h4> </p>
+             <p class="text-justify"> After voting system & 2-phased transactions inclusion into the core we'll use
+	       the features intensively. So having <a href="https://trade.secureae.com/#5841059555983208287"> "consensus" </a> tokens
+	       an owner will be able to drive a research. For example, there will be possible to vote on tasks priority or
+	       decide whether to pay a developer for e.g. visualization tool or not. We're willing to use the community driven
+	       Consensus Research.
+
+            <h2 class="" id="contact">Contact us</h2>
+
+             <p class="text-justify">We appreciate all the comments and wishes about our work and welcome everybode to contact us.
+	       We are open to new projects involving proof_of_code concept in the crypto-currency world. If you like to prove
+	       your code or design a reference implementation in the functional style we are ready to help. Please
+	       use the following methods:</p>
+	     <ol>
+	       <li> At the <a href="https://nxtforum.org"> NxtForum</a> contacting
+		 <a href="https://nxtforum.org/index.php?action=profile;u=451">kushti</a> and
+		 <a href="https://nxtforum.org/index.php?action=profile;u=3276">andruiman</a>.</li>
+	       <li> By the secure <a href="mailto:consensus.research@protonmail.com"> e-mail</a>.</li>
+	       </ol>
+            
+	    
+            <hr class="">
+        </div>
+        <!--/right-->
+    </div>
+    <!--/row-->
+</div>
+<!--/container-->
+</body>
+
+</html>
